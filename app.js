@@ -21,7 +21,9 @@ app.use(bodyParser.json());
 
 // Routes
 app.get("/", (req, res) => {
-  res.send('<h1>Store API</h1> <a href="/api/v1/products">product route</a>');
+  res.send(
+    '<h1>Store API</h1> <a href="/api/v1/products">product route</a><br/><h1>See the <a href="https://documenter.getpostman.com/view/25672427/2s935vkf4j" terget="_blank" >Docs</a> to use this API</h1>'
+  );
 });
 
 // product route
